@@ -8,7 +8,7 @@ const authRoutes = require('./routes/auth');
 
 const app = express();
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173', 'https://lead-management-system-fe.vercel.app'],
   credentials: true
 }));
 // Middleware
